@@ -3,8 +3,10 @@ name: .NET Core
 on:
   push:
     branches: [ master ]
+    paths: '**/*.sln'
   pull_request:
     branches: [ master ]
+    paths: '**/*.sln'
 
 jobs:
   build:
