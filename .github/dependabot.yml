@@ -5,6 +5,12 @@ updates:
 
   # maintain dependencies for NuGet
   - package-ecosystem: "nuget"
-    directory: "/Project0"
+    directory: "/"
+    schedule:
+      interval: "daily"
+
+  # maintain dependencies for Github Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
     schedule:
       interval: "daily"
